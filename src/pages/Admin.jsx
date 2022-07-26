@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AppStore = () => {
+const Admin = () => {
     return (
         <div>
-            Appstore
+            Admin page
         </div>
     );
 };
 
-export default AppStore;
+export default Admin;

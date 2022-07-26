@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AppStore = () => {
+const Auth = () => {
     return (
         <div>
-            Appstore
+            Auth ji est'
         </div>
     );
 };
 
-export default AppStore;
+export default Auth;

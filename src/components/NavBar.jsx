@@ -1,5 +1,5 @@
 import React from 'react';
-import {inject,observer} from "mobx-react"//не прихерел ли ты заставлять инвалида это писать от руки?
+import {inject,observer} from "mobx-react"
 import {Nav, Navbar} from "react-bootstrap";
 import {Button, Container} from "@mui/material";
 import {ThemeProvider} from "@mui/material";

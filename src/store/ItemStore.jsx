@@ -14,7 +14,7 @@ export default class ItemStore {
         this.count = 0;
     };
 
-    setItems = (products: CardPills[]) => {
+    setItem = (products: CardPills[]) => {
         this.items = products.map((product: CardPills) => new Pills(product));
     };
 
