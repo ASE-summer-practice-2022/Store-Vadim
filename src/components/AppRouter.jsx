@@ -13,31 +13,18 @@ const AppRouter = () => {
     const {user} = useContext(Context)
 
     //console.log(user)
-    return (
-        <Routes>
-            <Route path="Shop" element = {<Shop/>}/>
-            <Route path="MedicinePage" element = {<MedicinePage/>+"/:id"}/>
-            <Route path="*" element = {<Shop/>}/>
-            <Route path='login' element={<Auth/>}/>
-            <Route path='Registration' element={<Auth/>}/>
-        </Routes>
+  return true
+  return (
+      <Routes>
+          <Route path="Shop" element = {<Shop/>}/>
+          <Route path="MedicinePage" element = {<MedicinePage/>+"/:id"}/>
+          <Route path="*" element = {<Shop/>}/>
+          <Route path='login' element={<Auth/>}/>
+          <Route path='Registration' element={<Auth/>}/>
+      </Routes>
 
 
-    );
+  );
 };
 export default AppRouter;
 
-export const AuthRouter = () =>{
-    const isAuth = false
-
-    if (isAuth === false) {
-        alert('Авторизуйтесь, чтобы посетить эту таблицу')
-    } else {
-        return (
-            <Routes>
-                <Route path='Basket' element={<Basket/>}/>
-                <Route path='Admin' element={<Admin/>}/>
-            </Routes>)
-    }
-}
-//export default AuthRouter

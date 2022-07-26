@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter} from "react-router-dom";
-import AppRouter, {AuthRouter} from "./components/AppRouter";
+import AppRouter from "./components/AppRouter";
+import AuthRouter from "./AuthRouter";
 import {ThemeProvider} from "@mui/material";
 import theme from "./styles/Themes";
 import { Button } from '@mui/material';
@@ -12,7 +13,7 @@ const App = () => {
     return(
         <ThemeProvider theme={theme}>
         <BrowserRouter>
-            <AppRouter />
+            {/*<AppRouter />*/}
             <NavBar />
             {/*<Button color='secondary'>бебебе*/}
             {/*</Button>*/}

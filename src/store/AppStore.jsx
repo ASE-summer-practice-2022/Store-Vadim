@@ -1,11 +1,21 @@
-import React from 'react';
+import {makeAutoObservable} from "mobx";
 
-const AppStore = () => {
-    return (
-        <div>
-            Appstore
-        </div>
-    );
-};
-
-export default AppStore;
+export default class AppStore {
+  constructor() {
+    this._isAuth = false
+    this._user = {}
+    makeAutoObservable(this)
+  }
+  setIsAuth(bool){
+    this._isAuth = bool
+  }
+  setUser(user) {
+    this._user = user
+  }
+  get isAuth() {
+    return this._isAuth
+  }
+  get user() {
+    return this._user
+  }
+}

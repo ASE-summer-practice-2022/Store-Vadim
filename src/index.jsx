@@ -4,7 +4,7 @@ import App from './App'
 import AppStore from "./store/AppStore";
 import UserStore from "./store/UserStore";
 
-export const {Context} = createContext(null)
+export const Context = React.createContext({});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
